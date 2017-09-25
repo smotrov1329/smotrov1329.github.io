@@ -3180,9 +3180,9 @@ img {
 .header {
     min-width: 1200px;
     height: 90px;
-    background-color: #8cc34b;
-    -webkit-box-shadow: 0 5px 5px #727272;
-    box-shadow: 0 5px 5px #727272;
+    background-color: #2990d9;
+    -webkit-box-shadow: 0 5px 5px #abd3f0;
+    box-shadow: 0 5px 5px #abd3f0;
     text-align: right;
 }
 
@@ -3195,6 +3195,14 @@ img {
 
 .header .left-side .profile-image {
     float: left;
+    display: block;
+    width: 62px;
+    height: 62px;
+}
+
+.header .left-side .profile-image .user-img {
+    border-radius: 50%;
+    width: 100%;
 }
 
 .header .left-side .profile {
@@ -3244,7 +3252,7 @@ img {
 .header .right-side .social-icon .github-ico i:hover,
 .header .right-side .social-icon .skype-ico i:hover,
 .header .right-side .social-icon .vk-ico i:hover {
-    color: #fff;
+    color: #abd3f0;
 }
 
 .header .right-side .social-icon .github-ico:hover,

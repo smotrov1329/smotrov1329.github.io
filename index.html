@@ -1,147 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <title>SPLX</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="./css/main.css" rel="stylesheet">
+    <meta charset='utf-8'>
+    <title>ZIP менеджер</title>
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="left-side">
-                <div class="profile-image"><img src="./img/user-photo.png" alt="User Photo" class="user-img"></div>
-                <div class="profile">
-                    <div class="profile-title">SmotritelGOD</div>
-                    <div class="profile-email">smotritelGOD@gmail.com</div>
-                </div>
+    <div id="container">
+        <div class="description">
+            ZIP&UNZIP
+            <hr>
+        </div>
+        <div class="directories">
+            <div id="tree" class="tree">
             </div>
-            <div class="right-side">
-                <div class="social-icon">
-                    <div class="github-ico"><i class="fa fa-github" aria-hidden="true"></i></div>
-                    <div class="skype-ico"><i class="fa fa-skype" aria-hidden="true"></i></div>
-                    <div class="vk-ico"><i class="fa fa-vk" aria-hidden="true"></i></div>
-                </div>
-            </div>
-        </header>
-
-
-        <!-- .header-->
-
-        <main class="content">
-            <div class="about">
-                <div class="title-about">
-                    <h1>Команда SP0LEX</h1>
-                    <span class="text-title-about">Весело проводим время - <span style="font-weight: bold;">играя</span></span>
-                </div>
-                <div class="block-center">
-                    <iframe src="https://discordapp.com/widget?id=324954645929918465&theme=dark" width="1000" height="700" allowtransparency="true" frameborder="0"></iframe>
-                </div>
-            </div>
-            <!--<div class="tasks">
-                <div class="courses">
-                    <div class="title-courses">
-                        <h1>Курсы на loftblog</h1>
-                        <span class="text-title-courses">которые мне помогут в выполнении этого задания</span>
-                    </div>
-                    <div class="courses-list">
-                        <ul>
-                            <li class="course-element">
-                                <div class="course-image"><img src="./img/courses/js.png" alt="JAVASCRIPT"></div>
-                                <div class="hoverline"></div>
-                                <div class="course-title">
-                                    <div class="course-name">Oсновы JavaScript</div>
-                                    <div class="course-description">Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.</div>
-                                    <div class="course-worktime">&#9200; 24 урока (6 часов 46 минут)</div>
-                                </div>
-                                <div class="course-checked">
-                                    <input type="checkbox" name="" value="" id="img01" class="input"><label for="img01"><span></span> Посмотрел</label>
-                                </div>
-                            </li>
-                            <li class="course-element">
-                                <div class="course-image"><img src="./img/courses/jQ.png" alt="JQUERY"></div>
-                                <div class="hoverline"></div>
-                                <div class="course-title">
-                                    <div class="course-name">Основы JQUERY</div>
-                                    <div class="course-description">Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.</div>
-                                    <div class="course-worktime">&#9200; 11 уроков (2 часа 6 минут)</div>
-                                </div>
-                                <div class="course-checked">
-                                    <input type="checkbox" name="" value="" id="img02" class="input"><label for="img02"><span></span> Посмотрел</label>
-                                </div>
-                            </li>
-                            <li class="course-element">
-                                <div class="course-image"><img src="./img/courses/base.png" alt="BASE ELEMENTS OF PAGE"></div>
-                                <div class="hoverline"></div>
-                                <div class="course-title">
-                                    <div class="course-name">Базовые элементы страницы</div>
-                                    <div class="course-description">Видеокурс по верстке и программированию основных и популярных элементов сайтов. Посмотрев этот курс вы научитесь создавать табы, аккордеон, слайдшоу, слайдер и т.д.</div>
-                                    <div class="course-worktime">&#9200; 9 уроков (2 часа 7 минут)</div>
-                                </div>
-                                <div class="course-checked">
-                                    <input type="checkbox" name="" value="" id="img03" class="input"><label for="img03"><span></span> Посмотрел</label>
-                                </div>
-                            </li>
-                            <li class="course-element">
-                                <div class="course-image"><img src="./img/courses/adaptive.png" alt="ADAPTIVE SITE"></div>
-                                <div class="hoverline"></div>
-                                <div class="course-title">
-                                    <div class="course-name">Создание адаптивных сайтов</div>
-                                    <div class="course-description">В этом курсе вы узнаете как создавать адаптивные сайты, что такое адаптивная верстка и дизайн.</div>
-                                    <div class="course-worktime">&#9200; 7 уроков (2 часа 11 минут)</div>
-                                </div>
-                                <div class="course-checked">
-                                    <input type="checkbox" name="" value="" id="img04" class="input"><label for="img04"><span></span> Посмотрел</label>
-                                </div>
-                            </li>
-                            <li class="course-element">
-                                <div class="course-image"><img src="./img/courses/adap-gallery.png" alt="ADAPTIVE GALLARY"></div>
-                                <div class="hoverline"></div>
-                                <div class="course-title">
-                                    <div class="course-name">Верстка адаптивной css галереи</div>
-                                    <div class="course-description">В этом видеокурсе вы изучите инструменты, техники и подходы для web-разработчика, которые помогут вам решать поставленные задачи более быстро и эффективно.</div>
-                                    <div class="course-worktime">&#9200; 6 уроков (1 час 9 минут)</div>
-                                </div>
-                                <div class="course-checked">
-                                    <input type="checkbox" name="" value="" id="img05" class="input"> <label for="img05"><span></span> Посмотрел</label>
-                                </div>
-                            </li>
-                            <li class="course-element">
-                                <div class="course-image"><img src="./img/courses/css-gallery.png" alt="CSS GALLERY"></div>
-                                <div class="hoverline"></div>
-                                <div class="course-title">
-                                    <div class="course-name">Верстка адаптивной css галереи</div>
-                                    <div class="course-description">В этом курсе мы разберем как сверстать адаптивную css галерею. Также познакомимся с Flexbox.</div>
-                                    <div class="course-worktime">&#9200; 4 урока (50 минут)</div>
-                                </div>
-                                <div class="course-checked">
-                                    <input type="checkbox" name="" value="" id="img06" class="input"> <label for="img06"><span></span> Посмотрел</label>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="complited">
-                    <div class="text-complited">
-                        <p><i class="fa fa-check" aria-hidden="true"></i> Job completed</p>
-                    </div>
-                </div>
-            </div>-->
-        </main>
-        <!-- .content -->
+        </div>
+        <div class="files">
+            <ul id="listing" class="listing"></ul>
+        </div>
+        <progress id="progress-export-zip" class="progress-export-zip"></progress>
     </div>
-    <!-- .wrapper -->
-
-    <footer class="footer">
-        <div class="text-footer">Пока только такой текст</div>
-    </footer>
-    <!-- .footer -->
-
-    <script src="./js/libs.min.js"></script>
-    <script src="./js/main.js"></script>
-
+    <script type="text/javascript " src="zip.js "></script>
+    <script type="text/javascript " src="zip-fs.js "></script>
+    <script type="text/javascript " src="mime-types.js "></script>
+    <script type="text/javascript " src="main.js "></script>
 </body>
 
 </html>
